@@ -1,5 +1,5 @@
 pipeline{
-    agent any{
+    agent any
         stages{
             stage('Build'){
                 steps{
@@ -21,7 +21,6 @@ pipeline{
         }
         failure{
             echo 'Pipeline failed. Check Jenkins Console Output!'
-        }
         }
     }
 }
