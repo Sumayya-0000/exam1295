@@ -5,7 +5,7 @@ app=Flask(__name__)
 def index():
     return render_template('register.html')
 
-@app.route('/submit', methods=['POST'])
+@app.route('/success', methods=['POST'])
 def register():
     name = request.form['name']
     email = request.form['email']
